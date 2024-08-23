@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Home</title>
+    <style>
+        body {
+            font-family: Ariel, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .submit-button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+</style>
+</head>
+      <h1>Welcome to the Recipe Home Page</h1>
+      <p>Click the button below to submit your recipe:</p>
+      <a href="submit-recipe.html">
+        <button class="submit-button">Submit Recipe</button>
+        </a>
+</body>
+</html>
+
+# Submit Rcipe HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Recipe</title>
+    <style>
+        body {
+            font-family: Ariel, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        form {
+           display: inline-block;
+           text-align: left;
+        }
+        label, input, textarea {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Submit Your Recipe</h1>
+    <from action="submit-recipe.php" method="post">
+        <label for="recipe-name">Recipe Name:</label>
+        <input type="text" id="recipe-name" name="recipe-name" required>
+
+        <label for="ingredients">Ingredients:</label>
+        <textarea id="ingredients" name="ingrdeints" row="4" cols="50" required></textarea>
+        <label for="instructions">Instructions:</label>
+        <texarea id="instructions" name="instructions" row="4 cols=50" required></texarea>
+
+        <input type="submit" value="Submit">
+    </from>
+</body>
+</html>
+
+
+
+
